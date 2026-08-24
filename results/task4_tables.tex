@@ -1,0 +1,33 @@
+% ---- Table: effect of latent dimensionality -------------------------------
+\begin{table}[t]
+\centering
+\caption{Effect of latent dimensionality on MNIST VAE performance. All quantities are per image on the 10{,}000-image test set after 20 epochs. The $k$-NN accuracy ($k=10$) is a linear-probe-style measure of how much class structure survives the bottleneck; the VAE is trained without labels.}
+\label{tab:vae-latent-dim}
+\begin{tabular}{rrrrrrr}
+\toprule
+$d$ & $-$ELBO & Recon. & KL & KL$/d$ & 10-NN acc. & Params \\
+\midrule
+2 & 141.16 & 134.21 & 6.95 & 3.47 & 0.809 & 1{,}068{,}820 \\
+5 & 115.48 & 102.92 & 12.56 & 2.51 & 0.935 & 1{,}071{,}130 \\
+10 & 101.28 & 82.48 & 18.80 & 1.88 & 0.951 & 1{,}074{,}980 \\
+20 & 100.32 & 80.32 & 20.00 & 1.00 & 0.953 & 1{,}082{,}680 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ---- Table: per-digit reconstruction error -------------------------------
+\begin{table}[t]
+\centering
+\caption{Per-digit reconstruction cost (Bernoulli negative log-likelihood, nats per image), decoded deterministically from $\mu_\phi(x)$.}
+\label{tab:vae-per-digit}
+\begin{tabular}{rrrrrrrrrrr}
+\toprule
+$d$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+\midrule
+2 & 149.3 & 51.3 & 170.1 & 151.0 & 139.1 & 156.9 & 133.3 & 114.5 & 159.9 & 120.9 \\
+5 & 107.5 & 39.1 & 126.2 & 118.1 & 100.2 & 119.9 & 100.5 & 83.6 & 129.6 & 92.4 \\
+10 & 86.3 & 35.7 & 93.2 & 88.1 & 76.1 & 90.6 & 79.5 & 64.2 & 100.2 & 72.2 \\
+20 & 84.1 & 35.1 & 89.2 & 84.0 & 74.1 & 84.3 & 76.4 & 62.4 & 94.3 & 69.0 \\
+\bottomrule
+\end{tabular}
+\end{table}

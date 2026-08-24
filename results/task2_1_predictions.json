@@ -1,0 +1,86 @@
+[
+  {
+    "image": "1000311708.jpg",
+    "top1_label": "coffee mug",
+    "top1_index": 504,
+    "top1_prob": 0.6148231625556946,
+    "top5": [
+      {
+        "label": "coffee mug",
+        "prob": 0.6148231625556946
+      },
+      {
+        "label": "cup",
+        "prob": 0.37872740626335144
+      },
+      {
+        "label": "pitcher, ewer",
+        "prob": 0.0013689948245882988
+      },
+      {
+        "label": "espresso",
+        "prob": 0.0007815887220203876
+      },
+      {
+        "label": "water jug",
+        "prob": 0.0007050269050523639
+      }
+    ]
+  },
+  {
+    "image": "5f4f2cfd-db33-480a-aa74-26e7bb0a099c-1_all_49276.jpg",
+    "top1_label": "wall clock",
+    "top1_index": 892,
+    "top1_prob": 0.8346763849258423,
+    "top5": [
+      {
+        "label": "wall clock",
+        "prob": 0.8346763849258423
+      },
+      {
+        "label": "analog clock",
+        "prob": 0.15875177085399628
+      },
+      {
+        "label": "barometer",
+        "prob": 0.004361065104603767
+      },
+      {
+        "label": "stopwatch, stop watch",
+        "prob": 0.0006053858669474721
+      },
+      {
+        "label": "digital clock",
+        "prob": 0.0005374860484153032
+      }
+    ]
+  },
+  {
+    "image": "5f4f2cfd-db33-480a-aa74-26e7bb0a099c-1_all_49279.jpg",
+    "top1_label": "running shoe",
+    "top1_index": 770,
+    "top1_prob": 0.8831624388694763,
+    "top5": [
+      {
+        "label": "running shoe",
+        "prob": 0.8831624388694763
+      },
+      {
+        "label": "Loafer",
+        "prob": 0.046320054680109024
+      },
+      {
+        "label": "shoe shop, shoe-shop, shoe store",
+        "prob": 0.023306962102651596
+      },
+      {
+        "label": "sandal",
+        "prob": 0.012713632546365261
+      },
+      {
+        "label": "clog, geta, patten, sabot",
+        "prob": 0.00924019142985344
+      }
+    ]
+  }
+]
